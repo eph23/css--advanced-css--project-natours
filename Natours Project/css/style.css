@@ -1,3 +1,10 @@
+/* 
+0 - 600: phone
+600 -900: Tablet Portrait
+900 - 1200: Tablet Landscape
+1200 - 1800: where normal styles apply
+1800+ : Large Desktop/2k/4k
+*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -95,6 +102,21 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
