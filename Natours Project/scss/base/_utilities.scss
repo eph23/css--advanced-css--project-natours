@@ -2,21 +2,25 @@
     text-align: center;
 }
 
-.u-margin-top-xl {
-    margin-bottom: 8rem !important;
-}
 .u-margin-top-l {
     margin-bottom: 8rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
 }
+
 .u-margin-top-m {
     margin-bottom: 4rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 3rem !important;
+    }
 }
 .u-margin-top-sm {
     margin-bottom: 1.5rem !important;
 }
-.u-margin-bottom-xl {
-    margin-bottom: 8rem !important;
-}
+
 .u-margin-bottom-l {
     margin-bottom: 8rem !important;
 }
